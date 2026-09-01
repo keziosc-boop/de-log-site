@@ -1,0 +1,9 @@
+{
+  "name":"D&E Log",
+  "short_name":"D&E Log",
+  "start_url":"/",
+  "display":"standalone",
+  "background_color":"#04172f",
+  "theme_color":"#04172f",
+  "icons":[{"src":"/assets/favicon.png","sizes":"256x256","type":"image/png"}]
+}
