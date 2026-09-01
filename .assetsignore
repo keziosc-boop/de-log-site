@@ -1,5 +1,11 @@
 .git/
+.github/
+.wrangler/
 .gitignore
 .assetsignore
 README.md
 wrangler.jsonc
+package.json
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
