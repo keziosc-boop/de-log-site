@@ -1,0 +1,35 @@
+name: Validate public site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Validate required files and links
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f index.html
+          test -f styles.css
+          test -f robots.txt
+          test -f sitemap.xml
+          test -f llms.txt
+          test -f _headers
+          test -f wrangler.jsonc
+          test -f assets/de-log-logo.svg
+          grep -Fq 'https://wa.me/553799356861' index.html
+          grep -Fq 'https://delog.degroup.com.br/login' index.html
+          grep -Fq 'https://delog.log.com/' index.html
+          grep -Fq 'https://delog.log.com/sitemap.xml' robots.txt
+          grep -Fq 'delog.log.com' wrangler.jsonc
+          test "$(grep -o 'class=\"btn btn-whatsapp\"' index.html | wc -l)" -eq 1
+          test "$(grep -o 'class=\"btn btn-login\"' index.html | wc -l)" -eq 1
