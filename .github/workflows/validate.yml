@@ -30,6 +30,6 @@ jobs:
           grep -Fq 'https://delog.degroup.com.br/login' index.html
           grep -Fq 'https://delog.log.com/' index.html
           grep -Fq 'https://delog.log.com/sitemap.xml' robots.txt
-          grep -Fq 'delog.log.com' wrangler.jsonc
+          grep -Fq '"workers_dev": true' wrangler.jsonc
           test "$(grep -o 'class=\"btn btn-whatsapp\"' index.html | wc -l)" -eq 1
           test "$(grep -o 'class=\"btn btn-login\"' index.html | wc -l)" -eq 1
