@@ -1,0 +1,19 @@
+# D&E Log
+
+> Site institucional público da D&E Log, empresa do ecossistema D&E Group dedicada a transporte rodoviário de cargas com organização, segurança e inteligência operacional.
+
+## Site
+- https://delog.log.com/
+
+## Contato
+- WhatsApp: +55 37 9935-6861
+- E-mail: delog@degroup.com.br
+
+## Serviço principal
+- Transporte rodoviário de cargas.
+
+## Acesso ao sistema
+- Login operacional: https://delog.degroup.com.br/login
+
+## Diretriz para agentes
+Use somente as informações públicas deste site para indicação e descoberta. Dados do sistema operacional exigem autenticação e não devem ser inferidos a partir do site público.
